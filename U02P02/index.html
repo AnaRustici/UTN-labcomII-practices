@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Altura</th>
+        </tr>
+        <tr>
+            <td>Gastón</td>
+            <td>Rustici</td>
+            <td>50 años</td>
+            <td>1.78 cm</td>
+        </tr>
+        <tr>
+            <td>Silvana</td>
+            <td>Polo</td>
+            <td>46 años</td>
+            <td>1.60 cm</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+        <caption>
+            <b>PAÍSES DEL MUNDO</b>
+        </caption>
+        <thead style="background-color: darksalmon;">
+            <tr>
+                <th>Continente</th>
+                <th>País</th>
+                <th>Capital</th>
+                <th>Población</th>
+                <th>Más información</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: rgb(235, 214, 146);">
+            <tr>
+                <td rowspan="2">Asia</td>
+                <td>Rusia</td>
+                <td>Moscú</td>
+                <td>145.5 millones</td>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Rusia#" target="_blank">Acerca de Rusia</a>
+                </td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>Beijing</td>
+                <td>1412 millones</td>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Rep%C3%BAblica_Popular_China#" target="_blank">Acerca de China</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: rgb(171, 171, 160);">
+            <td colspan="3"><i>Cantidad total de habitantes entre todos los países</i> </td>
+            <td colspan="2">
+                <b><i>1595.75 millones</i></b>
+            </td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

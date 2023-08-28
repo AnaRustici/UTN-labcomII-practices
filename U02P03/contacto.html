@@ -18,8 +18,8 @@
         <!-- Navegación / cotenedor izquierdo -->
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Multimedia</a></li>
+                <li><a href="../U02P03/index.html" target="_self">Inicio</a></li>
+                <li><a href="../U02P03/multimedia.html" target="_self">Multimedia</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav> 
@@ -34,7 +34,7 @@
                                 <label for="nombre">Nombre:</label>
                             </td>
                             <td>
-                                <input type="text" name="nombre" id="nombre" required />
+                                <input type="text" name="nombre" id="nombre" required pattern="[a-zA-Z]"/>
                             </td>
                         </tr>
                         <tr>
@@ -50,7 +50,7 @@
                                 <label for="edad">Edad:</label>
                             </td>
                             <td>
-                                <input type="number" name="edad" id="edad" />
+                                <input type="number" name="edad" id="edad" pattern="[0-90]"/>
                             </td>
                         </tr>
                         <tr>
@@ -66,7 +66,7 @@
                                 <label for="coment">Comentario:</label>
                             </td>
                             <td>
-                                <input type="text" min="10" name="coment" id="coment" />
+                                <textarea name="coment" id="coment" minlength="10"></textarea>
                             </td>
                         </tr>
                     </table>

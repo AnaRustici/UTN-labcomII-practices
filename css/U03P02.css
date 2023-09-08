@@ -50,7 +50,7 @@ nav {
     color: antiquewhite;
 }
 
-.fas.fa-desktop {
+nav a i.fa {
     padding-left: 5px;
     font-size: 14px; 
     color: #fff; 

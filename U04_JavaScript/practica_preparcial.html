@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <script src="../U04_JavaScript/index.js" defer></script>
+</head>
+
+<body>
+    <div class="product-image"> </div>
+    <div class="product-details">
+        <div class="product-details-content">
+            <h2>Celulares</h2>
+            <form action="">
+                <div class="form-control"> 
+                    <label for="select-color">Color</label> 
+                    <select name="select-color" id="select-color">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="grafito">Grafito</option>
+                        <option value="sierra">Sierra</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select> 
+                </div>
+                <div class="form-control"> 
+                    <label for="select-tam">Capacidad</label> 
+                    <select name="select-tam" id="select-tam">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="128">128 GB</option>
+                        <option value="256">256 GB</option>
+                        <option value="512"> 512 GB</option>
+                    </select> 
+                </div>
+                <div class="form-control"> 
+                    <label for="cantidad">Cantidad</label> 
+                    <input type="number" name="cantidad" id="cantidad" /> 
+                </div>
+                <div class="form-control"> 
+                    <button type="button" onclick="calculatePrice()">Cotizar</button> 
+                </div>
+                <div id="result" class="form-control"> 
+                    Resultado cotización o error 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

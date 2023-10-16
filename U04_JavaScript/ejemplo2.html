@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página</title>
+</head>
+<body>
+    <h1>Mobile OS</h1>
+    <ul>
+        <li>Android</li>
+        <li>iOS</li>
+    </ul>
+    <p class="common-text">Primer párrafo</p>
+    <p class="common-text">Segundo párrafo</p>
+    <p class="common-text">Tercer párrafo</p>
+
+    <label for="my-input">Nombre:</label>
+    <input type="text" name="my-input">
+    <button onclick="MostrarValorInput()">Mostrar nombre</button>
+    
+    <script>
+        document.title;
+        document.getElementsByTagName('li')[0].innerText;
+
+        let textos = document.getElementsByClassName('common-text');
+
+        textos[0].style.fontWeight = "bold";
+        textos[2].style.color = "red";
+
+        for(let text of textos) {
+            text.style.marginTop = "10px";
+            text.style.backgroundColor = "yellow";
+        }
+        
+        //_______________________________________________________
+
+        let inputs = document.getElementsByTagName('input');
+        function MostrarValorInput() {
+            console.log("Su nombre es: " + inputs[0].value);
+        }
+
+    </script>
+</body>
+</html>

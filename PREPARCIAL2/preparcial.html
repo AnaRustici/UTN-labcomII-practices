@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../PREPARCIAL2/preparcial.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>Conversión de moneda</h1>
+        <form action="" method="post">
+            <div>
+                <label for="number">Cantidad de pesos argentinos a cambiar:</label>
+                <input type="number" name="campoTexto" id="campoTexto" required>
+            </div>
+            <div>
+                <label for="seleccionable">Moneda extranjera:</label>
+                <select name="seleccionable" id="seleccionable">
+                    <option disabled selected value="0">--Seleccione una opción--</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" onclick="cambioMoneda()">Cambiar</button>
+            </div>
+            <br>
+            <div id="resultado"></div>
+            <hr>
+            <h3>Agregar nueva moneda</h3>
+            <div>
+                <label for="text">Nombre de la moneda a agregar:</label>
+                <input type="text" name="nombreMoneda" id="nombreMoneda">
+            </div>
+            <div>
+                <label for="number">Costo de conversión en pesos:</label>
+                <input type="number" name="costoMoneda" id="costoMoneda">
+            </div>
+            <div>
+                <button type="button" onclick="agregarMoneda()">Agregar moneda</button>
+            </div>
+            <br>
+            <div id="resultado2"></div>
+        </form>
+    </div>
+</body>
+
+</html>

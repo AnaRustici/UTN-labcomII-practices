@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Contador</h1>
+    <label for="numero">Introduce un número:</label>
+    <input type="number" id="numero">
+    <button onclick="iniciarConteo()">Empezar Conteo</button>
+    <div id="resultado"></div>
+
+    <script>
+        function cuenta(numero) {
+            for (let i = 0; i <= numero; i++) {
+                setTimeout(function() {
+                    document.getElementById('resultado').innerText = i;
+                }, i * 300);
+            }
+        }
+
+        function iniciarConteo() {
+            var numero = document.getElementById('numero').value;
+            cuenta(numero);
+        }
+    </script>
+</body>
+</html>
